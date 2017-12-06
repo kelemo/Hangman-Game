@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <title>Hangman Game</title>
+ 
+ 	<!-- Bootstrap CDN -->
+ 	<!--There is no need to add reset.css since we use Bootstrap, which is compatible with every browser.-->
+ 	
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ 
+ 	<!-- link the actual stylesheet if there is any. In my case, I use bootstrap and I didn't style it.-->
+ 
+ </head>
+
+ <body style="background-image:url('assets/images/hangman.png')">
+ 	<div class="container">
+ 	<div class="jumbotron">
+ 		<h1>Hangman Game</h1>
+ 		<p>Warm Welcome to African Savanna!Guess Animals</p>
+ </div>
+ 
+ 	<div class="panel panel-default">
+ 	<div class="panel-heading">
+ 		<h3 class="panel-title">Word to Guess</h3>
+ 	</div>
+	<div class="panel-body">
+		<h2 id="wordToGuess">_ _ _ _ _ _ _</h2>
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-body">
+		Wrong Guesses: <span id="wrongGuesses"></span>
+	</div>
+</div>
+ 
+ <div class="panel panel-default">
+	<div class="panel-body">
+		Guesses Left: <span id="numGuesses"></span>
+ 	</div>
+ </div>
+ 
+ <div class="panel panel-default">
+ 	<div class="panel-body">
+ 	Win Counter: <span id="winCounter">0</span>
+ 	</div>
+ </div>
+ 
+ <div class="panel panel-default">
+	<div class="panel-body">
+ 	Loss Counter:  <span id="lossCounter">0</span>
+ 	</div>
+ </div>
+ 
+ </div>
+
+  <!-- We place JS here (instead of in the header) because the browser has to load html and css before it load the JS. -->
+ <script type="text/javascript" src="assets/javascript/game.js"></script>
+ </body>
+ </html>
